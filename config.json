@@ -18,7 +18,7 @@
         
     ],
     "systems": [{
-        "control_channels": [851800000, 853237500, 853287500, 853625000, 853962500, 853987500],
+        "control_channels": [851800000, 853625000],
         "type": "smartnet",
         "talkgroupsFile": "talkgroup.csv",
         "shortName": "uca",
