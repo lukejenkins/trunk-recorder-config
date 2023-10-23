@@ -2,7 +2,7 @@
     "ver": 2,
     "sources": [
         {
-            "center": 857687500,
+            "center": 852500000,
             "rate": 8000000,
             "error": 0,
             "gain": 42,
@@ -11,28 +11,18 @@
                 "RFGR": 1,
                 "IFGR": 40
             },
-            "digitalRecorders": 2,
+            "digitalRecorders": 7,
             "analogRecorders": 5,
             "driver": "osmosdr",
             "device": "soapy,driver=sdrplay"}
         
     ],
     "systems": [{
-        "control_channels": [856762500, 858937500],
+        "control_channels": [851800000, 853237500, 853287500, 853625000, 853962500, 853987500],
         "type": "smartnet",
         "talkgroupsFile": "talkgroup.csv",
         "shortName": "uca",
         "modulation": "fsk4",
         "analogLevels": 32
-    }],
-    "plugins": [{
-          "name": "rdioscanner_uploader",
-          "library": "librdioscanner_uploader.so",
-          "server": "http://localhost:3000",
-          "systems": [{
-                  "shortName": "uca",
-                  "apiKey": "4c05085a-ddd9-4e05-9593-b3036042ce14",
-                  "systemId": 7202
-          }]
     }]
 }
